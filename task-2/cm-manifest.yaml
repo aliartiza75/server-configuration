@@ -61,7 +61,7 @@
 
     - name: Ensure docker-compose is installed and available
       shell: curl -L https://github.com/docker/compose/releases/download/1.7.0-rc1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-
+ 
     - name: Make docker compose file executable
       shell: chmod +x /usr/local/bin/docker-compose
       ignore_errors: yes
