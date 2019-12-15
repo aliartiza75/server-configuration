@@ -4,26 +4,6 @@
 
 In this task I created a cronjob for monitoring the server resources.
 
-## Create a cronjob
-
-Follow the guidelines given below to create a cronjob for server monitoring:
-
-1. To edit the crontab file use the command given below:
-
-```bash
-$ crontab -e
-```
-
-2. Add the cron job
-
-```bash
-*/5 * * * * <path-to-server-monitoring-script> --FS <folder-path> --DS <folder-path>
-```
-
-save the file after adding the script. Details of the above command line arguments is provided in next section.
- 
-
-
 ## Server Monitoring Script
 
 Server monitoring script perform following tasks:
@@ -65,6 +45,24 @@ In the above script:
 
 It creates a log file in the `$HOME` directory. The name of the log file is in this format `YYYY-mm-dd-HH-MM-SS.log`
 
+## Create a cronjob
+
+Follow the guidelines given below to create a cronjob for server monitoring:
+
+1. To edit the crontab file use the command given below:
+
+```bash
+$ crontab -e
+```
+
+2. Add the cron job
+
+```bash
+*/5 * * * * <path-to-server-monitoring-script> --FS <folder-path> --DS <folder-path>
+```
+
+save the file after adding the script.
+ 
 ## Refrences
 
 1. https://unix.stackexchange.com/questions/69167/bash-script-that-print-cpu-usage-diskusage-ram-usage

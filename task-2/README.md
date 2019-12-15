@@ -10,11 +10,8 @@ In this task I created an ansible playbook for configuring packages on a centos7
 
 ```bash
 $ sudo apt-get update
-
 $ sudo apt-add-repository ppa:ansible/ansible
-
 $ sudo apt-get update
-
 $ sudo apt-get install ansible -y
 ```
 
@@ -62,18 +59,14 @@ ansible-playbook <playbook-name> -v
 7. Once the playbook execution is complete access each to check whether packages are installed or not:
 
 ```bash
-ssh <user>@NODE_1_IP
+ssh <username>@NODE_1_IP
 ```
 
 
 ## Refrences
 
 1. https://docs.ansible.com/ansible/latest/user_guide/playbooks_error_handling.html
-
 2. https://docs.ansible.com/ansible/latest/modules/package_module.html#parameters
-
 3. https://docs.ansible.com/ansible/latest/modules/yum_module.html
-
 4. https://docs.ansible.com/ansible/latest/modules/apt_module.html
-
 5. https://www.techrepublic.com/article/how-to-install-ansible-on-ubuntu-server-18-04/
